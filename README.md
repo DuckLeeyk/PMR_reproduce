@@ -72,6 +72,7 @@ PMR_reproduce
 │   │       ├── ukb_b37_0.1_chr11.R_snp.116383348_117747110.Rvar
 │   │       └── …
 │   ├── input
+│   └── gencode_v12_gene_annotation.csv
 │   └── ...
 ├── make_gene_annotation.py
 ├── make_input.R
