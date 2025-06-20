@@ -91,6 +91,14 @@ The `make_input.R` script includes the following processes:
 
 ## 3. Running PMR Analysis
 
+It is easy to install the development version of PMR package using the 'devtools' package:
+
+```r
+# install.packages("devtools")
+library(devtools)
+install_github("yuanzhongshang/PMR")
+```
+
 Users can refer to the `run_PMR_summary.R` script provided in this repository to perform PMR analysis on the files in `data/input`.
 
 If you have pre-downloaded the files in the `data/input/` directory from this repository, you can run the script directly.
