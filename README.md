@@ -18,7 +18,9 @@ Since gene expression data contains genome-wide SNPs, we need to extract cis-SNP
 
 You can download the Comprehensive gene annotation from: [https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz)
 
-After downloading, run the `make_gene_annotation.py` script in this repository to filter gene regions corresponding to protein coding genes and lincRNAs. (The output of this step is already provided in `data/gencode_v12_gene_annotation.csv`, so users can skip this step)
+After downloading, run the `make_gene_annotation.py` script in this repository to filter gene regions corresponding to protein coding genes and lincRNAs. 
+
+(The output of this step is already provided in `data/gencode_v12_gene_annotation.csv`, so users can skip this step)
 
 ### Download Gene Expression Summary Statistics
 
