@@ -32,6 +32,8 @@ When performing PMR analysis with summary-level data, LD matrices from both gene
 
 > "# LDmatrix_1 and LDmatrix_2 are often from the same reference panel data"
 
+Since the authors recommend using LD reference from the same panel, and our GWAS data comes from UK Biobank, we use the UK Biobank LD reference for both gene expression and GWAS LD matrices in our analysis.
+
 Here, we use the UK Biobank LD reference: [https://uchicago.app.box.com/s/jqocacd2fulskmhoqnasrknbt59x3xkn/folder/234629250877](https://uchicago.app.box.com/s/jqocacd2fulskmhoqnasrknbt59x3xkn/folder/234629250877)
 
 Consistent with the summary statistics version, we select the **build 37** LD reference: UK Biobank LD reference/LD_matrices/b37/
