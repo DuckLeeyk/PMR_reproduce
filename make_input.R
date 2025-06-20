@@ -1,19 +1,17 @@
 # =============================================================================
 # Description:
 #   This script performs locus-specific data preparation by:
-#     1. Reading gene annotation and extracting the genomic interval
-#        for a target gene.
-#     2. Loading cis-eQTL summary statistics for that gene and filtering SNPs
+#     1. Loading cis-eQTL summary statistics for that gene and filtering SNPs
 #        within ±100 kb of the gene interval on a specified chromosome.
-#     3. Reading LD region definitions, selecting the best-matching LD block,
+#     2. Reading LD region definitions, selecting the best-matching LD block,
 #        and loading both the variant list and full LD matrix for that block.
-#     4. Reading GWAS variant information and summary statistics, filtering to
+#     3. Reading GWAS variant information and summary statistics, filtering to
 #        single-nucleotide variants, merging on the variant ID, and subsetting
 #        to the same chromosome.
-#     5. Identifying SNPs common to the eQTL data, LD variant list, and GWAS
+#     4. Identifying SNPs common to the eQTL data, LD variant list, and GWAS
 #        summary statistics. Extracting the corresponding submatrix from the
 #        LD matrix and subsetting all three datasets to these shared SNPs.
-#     6. Writing out the filtered eQTL summary, LD matrix, and GWAS summary
+#     5. Writing out the filtered eQTL summary, LD matrix, and GWAS summary
 #        statistics data for PMR analyses.
 # =============================================================================
 
@@ -66,7 +64,7 @@ gc()
 
 # Read LD region definitions
 LD_region <- read.table(
-  "data/LD/LDetectregion1533.txt",
+  "data/LDetectregion1533.txt",
   header = TRUE,
   stringsAsFactors = FALSE
 )
