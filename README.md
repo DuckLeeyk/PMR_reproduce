@@ -66,12 +66,13 @@ PMR_reproduce
 │   ├── GWAS_summary
 │   │   ├── 21001_irnt.gwas.imputed_v3.both_sexes.tsv.bgz
 │   │   └── variants.tsv.bgz
+│   ├── LD
+│   │   └── 11
+│   │       ├── ukb_b37_0.1_chr11.R_snp.116383348_117747110.RDS
+│   │       ├── ukb_b37_0.1_chr11.R_snp.116383348_117747110.Rvar
+│   │       └── …
 │   ├── input
-│   └── LD
-│       └── 11
-│           ├── ukb_b37_0.1_chr11.R_snp.116383348_117747110.RDS
-│           ├── ukb_b37_0.1_chr11.R_snp.116383348_117747110.Rvar
-│           └── …
+│   └── ...
 ├── make_gene_annotation.py
 ├── make_input.R
 └── run_PMR_summary.R
