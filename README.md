@@ -6,7 +6,7 @@ PMR is a probabilistic Mendelian randomization (MR) method for TWAS applications
 
 In this tutorial, we provide a real data example performing probabilistic Mendelian randomization analysis using **BMI** GWAS data from UK Biobank and gene expression data for **BACE1** from GEUVADIS. The BACE1 region is the same one used for simulations in the original paper. Users can extend the code provided in this repository to implement genome-wide PMR analysis.
 
-## Data Preparation
+## 1. Data Preparation
 
 The analysis requires three main data components: gene expression summary statistics, GWAS summary statistics, and LD reference data. Below we describe how to obtain each of these datasets.
 
@@ -73,7 +73,7 @@ PMR_reproduce
 └── run_PMR_summary.R
 ```
 
-## Data Filtering and Alignment
+## 2. Data Filtering and Alignment
 
 Users can refer to the `make_input.R` script provided in this repository to filter regions for PMR analysis and align gene expression summary statistics, GWAS summary statistics, and LD reference data to generate input data for PMR.
 
@@ -87,7 +87,7 @@ The `make_input.R` script includes the following processes:
 4. Identifying common SNPs across eQTL data, LD variant list, and GWAS summary statistics. Extracting the corresponding submatrix from the LD matrix and subsetting all three datasets to these shared SNPs.
 5. Writing out the filtered datasets: eQTL summary, LD matrix, and GWAS summary statistics data for PMR analyses.
 
-## Running PMR Analysis
+## 3. Running PMR Analysis
 
 Users can refer to the `run_PMR_summary.R` script provided in this repository to perform PMR analysis on the files in `data/input`.
 
