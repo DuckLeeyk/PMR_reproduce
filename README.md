@@ -16,7 +16,7 @@ The analysis requires three main data components: gene expression summary statis
 
 Since gene expression data contains genome-wide SNPs, we need to extract cis-SNPs within and around the gene region for real data analysis. The original authors used gene position and functional annotations from GENCODE (release 12).
 
-You can download the Comprehensive gene annotation from: [https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz)
+You can download the comprehensive gene annotation from: [https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_12/gencode.v12.annotation.gtf.gz)
 
 After downloading, run the `make_gene_annotation.py` script in this repository to filter gene regions corresponding to protein coding genes and lincRNAs. 
 
@@ -81,9 +81,7 @@ PMR_reproduce
 
 ## 2. Data Filtering and Alignment
 
-Users can refer to the `make_input.R` script provided in this repository to filter regions for PMR analysis and align gene expression summary statistics, GWAS summary statistics, and LD reference data to generate input data for PMR.
-
-If the above file directory structure is ready, you can directly run the entire `make_input.R` script, and you will obtain 3 input data files in the `data/input` folder.
+Users can refer to the `make_input.R` script provided in this repository to filter regions for PMR analysis and align gene expression summary statistics, GWAS summary statistics, and LD reference data to generate input data for PMR. If the above file directory structure is ready, you can directly run the entire `make_input.R` script, and you will obtain 3 input data files in the `data/input` folder.
 
 The `make_input.R` script includes the following processes:
 
@@ -103,9 +101,7 @@ library(devtools)
 install_github("yuanzhongshang/PMR")
 ```
 
-Users can refer to the `run_PMR_summary.R` script provided in this repository to perform PMR analysis on the files in `data/input`.
-
-If you have pre-downloaded the files in the `data/input/` directory from this repository, you can run the script directly.
+Users can refer to the `run_PMR_summary.R` script provided in this repository to perform PMR analysis on the files in `data/input`. If you have pre-downloaded the files in the `data/input/` directory from this repository, you can run the script directly.
 
 **Important Note**: When running the PMR program, you may encounter issues with Cholesky decomposition. This problem has been reported in the original repository's issues ([https://github.com/yuanzhongshang/PMR/issues/6](https://github.com/yuanzhongshang/PMR/issues/6)).
 
